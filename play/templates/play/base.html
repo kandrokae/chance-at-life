@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %}Chance At Life{% endblock %}</title>
+	{% load static %} 
+		<link rel="icon" href="{% static 'play/images/icon.png' %}">
+		<script src="{% static 'play/js/videocontrols.js' %}"></script>
+		<link rel="stylesheet" type="text/css" href="{% static 'play/css/style.css' %}"/>
+</head>
+
+
+<body>
+<!-- <nav>
+	<div>
+		<a class="navbar-brand" href="#"><img src="{% static 'play/images/Chanceatlifelogo.png' %}" alt="Chance At Life Logo" height="60"></a>
+	</div> 
+
+</nav> -->
+{% block body %}
+{% endblock %}	
+</body>
+</html>

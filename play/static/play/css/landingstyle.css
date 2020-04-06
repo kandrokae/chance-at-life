@@ -1,0 +1,92 @@
+html {
+}
+
+#bg {
+	z-index: -1;
+	min-width: 100vw;
+	height: 100%;
+	bottom: 0;
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	object-fit: cover;
+
+}
+
+body { 
+	margin:0; 
+	background-color: #e5f588;
+
+} 
+
+#page-container {
+	width: 45vw;
+	position: absolute;
+	left: 15%;
+
+	top: 25%;
+
+}
+
+#play-button {
+	padding-top: 40px;
+	right: 0;
+	width: 245px;
+	position: absolute;
+}
+
+#play-text {
+	position: absolute;
+	left: 50%;
+	bottom: 0%;
+	-webkit-transform: translateX(-50%) translateY(35%);
+	transform: translateX(-50%) translateY(35%);
+	font-family: 'Changa', sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+	color: black;
+}
+
+nav {
+	width: 100vw;
+	height: 120px;
+	position: relative;
+}
+
+#logo {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding-left: 40px;
+}
+
+#welcome-text {
+	padding-top: 0px;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+#madeby {
+	margin: 0;
+	font-weight: 600;
+	font-size: 20px;
+	font-style: italic;
+	color: #e5f588;
+}
+
+#welcome {
+	font-size: 50px;
+	color: white;
+	margin: 0;
+}
+
+#bio {
+	font-size: 18px;
+}
+
+#iphone {
+	position: absolute;
+	top: 50%;
+	right: 15%;
+	transform: translateY(-50%);
+	height: 500px;
+}
