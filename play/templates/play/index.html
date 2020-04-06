@@ -36,7 +36,7 @@
 	<div id='controls-container'>
 
 		<div id="video-controls">
-			<a href="#"><img src="{% static 'play/images/Chanceatlifelogo.png' %}" alt="Chance At Life Logo" id="logo"></a>
+			<a href="{% url landing %}"><img src="{% static 'play/images/Chanceatlifelogo.png' %}" alt="Chance At Life Logo" id="logo"></a>
 			<input type="range" id="seek-bar" value="0">
 			<input type="image" id="play-pause" src="{% static 'play/images/play-button.svg' %}">
 			<input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
