@@ -1,0 +1,1 @@
+web: gunicorn ChanceAtLife.wsgi --log-file -
