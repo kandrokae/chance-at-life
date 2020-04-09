@@ -369,11 +369,9 @@ input[type=range]:focus::-ms-fill-upper {
 
 #flag {
 	position: absolute;
-	left: 50%;
-	-webkit-transform: translateX(-206px);
-	transform: translateX(-206px);
-	height: 42px;
-	bottom: 24px;
+	left: 3.4%;
+	height: 5.3%;
+	bottom: 2.6%;
 	z-index: 5;
 	visibility: hidden;
 }
@@ -388,28 +386,27 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 #progress_container {
-	position: fixed;
-	left: 50%;
+	position: absolute;
+	left: 21.3%;
 	-webkit-transform: translateX(-38%);
 	transform: translateX(-38%);
-	height: 42px;
-	bottom: 3%;
+	height: 5.32%;
+	bottom: 2.5%;
 }
 
 #myProgress {
-	left: 50%;
-	-webkit-transform: translateX(-37.5%);
-	transform: translateX(-37.5%);
-	position: fixed;
-	bottom: 3.7%;
-	width: 328px;
+	left: 22.42%;
+	position: absolute;
+	bottom: 3.3%;
+	width: 73.8%;
 	background-color: #CCFF99;
 	border-radius: 6px;
+	height: 3.77%;
 }
 
 #myBar {
-	height: 30px;
-	position: relative;
+	height: 100%;
+	position: absolute;
 	background-color: #3399CC;
 	border-radius: inherit;
 	-webkit-transition: all 0.8s ease-in-out;
@@ -418,10 +415,11 @@ input[type=range]:focus::-ms-fill-upper {
 
 #progressText {
 	position: absolute;
-	left: 39%;
+	left: 50%;
+    transform: translateX(-50%) translateY(-100%);
 	z-index: 6;
-	bottom: -128%;
-	font-size: 28px;
+	font-size: 3.5vh;
+	bottom: -303%;
 	color: white;
 	font-family: 'Changa', sans-serif;
 	font-weight: 500;
