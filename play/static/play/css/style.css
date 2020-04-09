@@ -4,6 +4,9 @@
 	position: relative;
 	text-align: center;
 	display: block;
+	top: 50vh;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
 }
 
 ::-webkit-media-controls {
