@@ -417,7 +417,8 @@ input[type=range]:focus::-ms-fill-upper {
     transform: translateX(-50%) translateY(-100%);
 	z-index: 6;
 	font-size: 3.5vh;
-	bottom: -303%;
+	bottom: -210%;
+	color: white;
 	font-family: 'Changa', sans-serif;
 	font-weight: 500;
 	padding: 0;
@@ -428,13 +429,13 @@ input[type=range]:focus::-ms-fill-upper {
 
 @media (min-aspect-ratio: 9/16) {
 	#progressText {
-		color: black;
+		font-size: 3.5vh;
 	}
 }
 
 @media (max-aspect-ratio: 9/16) {
 	#progressText {
-		color: white;
+		font-size: 6.5vw;
 	}
 }
 
