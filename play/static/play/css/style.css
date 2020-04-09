@@ -3,13 +3,12 @@
 	height: 100%;
 	position: relative;
 	text-align: center;
-	/* background-color: #081630; */
+	display: block;
 }
 
 ::-webkit-media-controls {
   display:none !important;
 }
-
 
 body { 
 	margin:0; 
@@ -23,7 +22,7 @@ body {
 	object-fit: cover;
 	box-sizing: border-box;
 	max-width: 100vw;
-	max-height: 100vh;
+	max-height: 99.5vh;
 	text-align: center;
 	display: block;
 }
