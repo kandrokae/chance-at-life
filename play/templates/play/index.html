@@ -21,14 +21,15 @@
 	{% load static %}
 
 	<div id="video-container">
-		
-		<video id="video" autoplay="" muted="">
-		<source src="{% static 'play/videos/ChanceAtLifelite_qtp.mp4' %}" type='video/mp4'>
-		Your browser does not support the video tag.
-		</video>
-			
-		<div id='buttons'>
-			<input type="image" id="start" src="{% static 'play/images/playbutton.png' %}">
+		<div id="videoholder">
+			<video id="video" autoplay="" muted="">
+			<source src="{% static 'play/videos/ChanceAtLifelite_qtp.mp4' %}" type='video/mp4'>
+			Your browser does not support the video tag.
+			</video>
+				
+			<div id='buttons'>
+				<input type="image" id="start" src="{% static 'play/images/playbutton.png' %}">
+			</div>
 		</div>
 	</div>
 			

@@ -15,14 +15,17 @@ body {
 	margin:0; 
 	background-color: #081630;
 } 
+#videoholder {
+	display: inline-block;
+}
 
 #video {
-	max-height: 99.6vh;
-	max-width:  100vw;
+	object-fit: cover;
+	box-sizing: border-box;
+	max-width: 100vw;
+	max-height: 100vh;
 	text-align: center;
-	height: auto;
-	width: auto;
-	margin: 0;
+	display: block;
 }
 
 #video-controls {
