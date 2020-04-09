@@ -18,6 +18,7 @@ body {
 	background-color: #081630;
 } 
 #videoholder {
+	position: relative;
 	display: inline-block;
 }
 
@@ -359,9 +360,8 @@ input[type=range]:focus::-ms-fill-upper {
 #start {
 	position: absolute;
 	visibility: hidden;
-	height: 87px;
-	left: 50%;
-	top: 476px;
+	height: 11.2%;
+	top: 60.7%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 
