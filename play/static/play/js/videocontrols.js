@@ -215,11 +215,11 @@ window.onload = function() {
 		};
 
 		if (video.currentTime >= video.duration - 1) {
-			window.location.href = 'http://127.0.0.1:8000/';
+			window.location.href = 'https://chance-at-life.herokuapp.com/';
 		};
 
 		if (video.currentTime >= loseTime - 0.5) {
-			window.location.href = 'http://127.0.0.1:8000/';
+			window.location.href = 'https://chance-at-life.herokuapp.com/';
 		};
 
 
