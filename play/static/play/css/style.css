@@ -388,8 +388,6 @@ input[type=range]:focus::-ms-fill-upper {
 #progress_container {
 	position: absolute;
 	left: 21.3%;
-	-webkit-transform: translateX(-38%);
-	transform: translateX(-38%);
 	height: 5.32%;
 	bottom: 2.5%;
 }
@@ -420,11 +418,24 @@ input[type=range]:focus::-ms-fill-upper {
 	z-index: 6;
 	font-size: 3.5vh;
 	bottom: -303%;
-	color: white;
 	font-family: 'Changa', sans-serif;
 	font-weight: 500;
+	padding: 0;
+	margin: 0;
 	-webkit-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
+}
+
+@media (min-aspect-ratio: 9/16) {
+	#progressText {
+		color: black;
+	}
+}
+
+@media (max-aspect-ratio: 9/16) {
+	#progressText {
+		color: white;
+	}
 }
 
 #timerContainer {
