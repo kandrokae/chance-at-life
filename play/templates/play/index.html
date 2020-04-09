@@ -28,7 +28,20 @@
 			</video>
 				
 			<input type="image" id="start" src="{% static 'play/images/playbutton.png' %}">
+
+			<div>
+				<img id="flag" src="{% static 'play/images/flag.png' %}" alt="Flag">
+			</div>
 			
+			<div id="progressContainer">
+				<img id="progress_container" src="{% static 'play/images/progressbar.png' %}" alt="progressbar">
+				<div id="myProgress">
+					<div id="myBar">
+						<p id="progressText">$55</p>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</div>
 			
@@ -67,17 +80,8 @@
 		<input type="image" id="button2" src="{% static 'play/images/rightchoice.png' %}" height="120">
 
 	</div>
-	<div>
-		<img id="flag" src="{% static 'play/images/flag.png' %}" alt="Flag">
-	</div>
-	<div id="progressContainer">
-		<img id="progress_container" src="{% static 'play/images/progressbar.png' %}" alt="progressbar">
-		<div id="myProgress">
-			<div id="myBar">
-				<p id="progressText">$55</p>
-			</div>
-		</div>
-	</div>
+
+	
 
 	<div id="timerContainer">
 		<div id="timerBar"></div>
