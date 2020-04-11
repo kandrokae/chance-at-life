@@ -202,13 +202,26 @@ input[type=range]:focus::-ms-fill-upper {
 #questions {
 	position: relative;
 	z-index: 3;
-	top: -114px;
-	left: 15px;
+	top: 13%;
+	margin: 0;
+	left: 4.5%;
+	text-align: left;
 	font-family: 'Changa', sans-serif;
 	font-weight: bold;
-	font-size: 22px;
-	max-width: 365px;
+	max-width: 91%;
 	line-height: 108%;
+}
+
+@media (min-aspect-ratio: 9/16) {
+	#questions {
+		font-size: 2.63vh;
+	}
+}
+
+@media (max-aspect-ratio: 9/16) {
+	#questions {
+		font-size: 4.73vw;
+	}
 }
 
 #choiceleft {
@@ -223,6 +236,7 @@ input[type=range]:focus::-ms-fill-upper {
 	position: absolute;
 	top: 2.5%;
 	left: 50%;
+	width: 90%;
 	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
 
@@ -328,7 +342,9 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 #questionbox {
-	z-index: 2
+	z-index: 2;
+	max-width: 100%;
+	max-height: 100%;
 
 	
 
