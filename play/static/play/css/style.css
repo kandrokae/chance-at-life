@@ -200,7 +200,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 #questions {
-	position: relative;
+	position: absolute;
 	z-index: 3;
 	top: 13%;
 	margin: 0;
@@ -225,11 +225,16 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 #choiceleft {
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
 
 }
 
 #choiceright {
-
+	position:absolute;
+	right: 50%;
+	bottom: 50%;
 }
 
 #questiondiv {
@@ -244,43 +249,27 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 #leftchoice {
-	position: absolute;
-	left: 50%;
-	top: 520px;
-	-webkit-transform: translateX(-129%);
-	transform: translateX(-129%);
-
+	max-width: 100%;
+	max-height: 100%;
 }
 
 #button1 {
-	position: absolute;
-	left: 50%;
-	top: 520px;
-	-webkit-transform: translateX(-129%);
-	transform: translateX(-129%);
+	max-width: 100%;
+	max-height: 100%;
 	opacity: 10%;
 	z-index: 4;
 
 }
 	
 #button2 {
-	position: absolute;
-	top: 520px;
-	left: 50%;
-	-webkit-transform: translateX(37%);
-	transform: translateX(37%);
-	opacity: 10%;
-	z-index: 4;
+	max-width: 100%;
+	max-height: 100%;
 
 }
 
 #rightchoice {
-	position: absolute;
-	top: 520px;
-	left: 50%;
-	-webkit-transform: translateX(37%);
-	transform: translateX(37%);
-
+	max-width: 100%;
+	max-height: 100%;	
 }
 
 #choice1 {
