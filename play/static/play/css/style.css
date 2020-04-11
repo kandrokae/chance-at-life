@@ -29,6 +29,7 @@ body {
 	max-height: 99.5vh;
 	text-align: center;
 	display: block;
+	z-index: 1;
 }
 
 #video-controls {
@@ -192,14 +193,8 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 #prompt {
-	position: absolute;
 	visibility: hidden;
 	opacity: 0;
-	top: 20px;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
-	text-align: left;
 	-webkit-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
@@ -225,7 +220,13 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 #questiondiv {
-	
+	position: absolute;
+	top: 2.5%;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+
+
 }
 
 #leftchoice {
@@ -328,6 +329,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 #questionbox {
 	z-index: 2
+
 	
 
 }
