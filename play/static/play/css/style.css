@@ -70,6 +70,9 @@ button:hover {
 	position: relative;
 	bottom: 4px;
 	padding-right: 11px;
+	transform: rotate(-90deg);
+	visibility: hidden;
+	opacity: 0.2;
 }
 
 input[type=range] {
@@ -283,7 +286,7 @@ input[type=range]:focus::-ms-fill-upper {
 #choice1 {
 	position: absolute;
 	z-index: 3;
-	left: 101px;
+	left: 50%;
 	top: 9%;
 	margin: 0;
 	white-space: nowrap;
@@ -300,7 +303,7 @@ input[type=range]:focus::-ms-fill-upper {
 #choice2 {
 	position: absolute;
 	z-index: 3;
-	left: 300px;
+	left: 50%;
 	top: 9%;
 	margin: 0;
 	white-space: nowrap;
