@@ -216,14 +216,13 @@ input[type=range]:focus::-ms-fill-upper {
 	line-height: 108%;
 }
 
-/* #choices {
-	position: absolute;
-	z-index: 2;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
+#choiceleft {
 
-} */
+}
+
+#choiceright {
+	
+}
 
 #leftchoice {
 	position: absolute;
