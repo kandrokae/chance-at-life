@@ -228,7 +228,7 @@ input[type=range]:focus::-ms-fill-upper {
 	position: absolute;
 	left: 15%;
 	bottom: 17%;
-	width: 24%;
+	width: 27%;
 
 }
 
@@ -236,7 +236,7 @@ input[type=range]:focus::-ms-fill-upper {
 	position:absolute;
 	right: 15%;
 	bottom: 17%;
-	width: 24%;
+	width: 27%;
 }
 
 #questiondiv {
@@ -284,7 +284,9 @@ input[type=range]:focus::-ms-fill-upper {
 	position: absolute;
 	z-index: 3;
 	left: 101px;
-	top: 516px;
+	top: 9%;
+	margin: 0;
+	white-space: nowrap;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 	font-family: 'Changa', sans-serif;
@@ -299,7 +301,9 @@ input[type=range]:focus::-ms-fill-upper {
 	position: absolute;
 	z-index: 3;
 	left: 300px;
-	top: 516px;
+	top: 9%;
+	margin: 0;
+	white-space: nowrap;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 	font-family: 'Changa', sans-serif;
@@ -313,28 +317,28 @@ input[type=range]:focus::-ms-fill-upper {
 #price1 {
 	position: absolute;
 	z-index: 3;
-	left: 100px;
-	top: 485px;
+	left: 50%;
+	top: 12%;
+	margin: 0;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 	font-family: 'Changa', sans-serif;
 	font-weight: 700;
 	font-size: 55px;
-	max-width: 100px;
 	color: black;
 }
 
 #price2 {
 	position: absolute;
 	z-index: 3;
-	left: 300px;
-	top: 484px;
+	left: 50%;
+	top: 12%;
+	margin: 0;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 	font-family: 'Changa', sans-serif;
 	font-weight: 700;
 	font-size: 55px;
-	max-width: 100px;
 	color: white;
 }
 
