@@ -65,6 +65,11 @@ button:hover {
 	top: 500px;
 }
 
+#mute:hover #volume-bar { 
+	opacity: 1;
+	transition-delay: 1s; 
+}
+
 #volume-bar {
 	width: 60px;
 	position: relative;
@@ -187,13 +192,25 @@ input[type=range]:focus::-ms-fill-upper {
   background: #367ebd;
 }
 
-
-#logo {
-	height: 80px;
-	left: 20px;
-	bottom: -15px;
-	position: absolute;
+@media (min-aspect-ratio: 774/792) {
+	#logo {
+		height: 70px;
+	    left: 2vh;
+	    bottom: 1.5vh;
+	    position: fixed;
+	}
 }
+
+@media (max-aspect-ratio: 774/792) {
+	#logo {
+		height: 50px;
+	    left: 2vh;
+	    top: 1.5vh;
+	    bottom: 0;
+	    position: fixed;
+	}
+}
+
 
 #prompt {
 	visibility: hidden;
