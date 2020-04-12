@@ -44,11 +44,11 @@ body {
 
 @media (max-aspect-ratio: 774/792) {
 	#video-controls {
-		position: fixed;
-		bottom: 2.1vh;
+		position: absolute;
+		bottom: 9%;
 		left: 0;
 		right: 0;
-		padding: 10px;
+		padding-right: 10px;
 	}
 }
 #video-controls {
@@ -64,7 +64,6 @@ body {
 }
 
 #controls-container:hover #video-controls { opacity: 1; }
-
 
 button:hover {
 	cursor: pointer;
@@ -85,13 +84,22 @@ button:hover {
 	bottom: 83px;
     right: 13px;
 	transform: rotate(-90deg);
-	/* visibility: hidden; */
+	visibility: hidden;
 	opacity: 0;
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	-ms-transition: opacity .5s ease-in-out;
+	transition: opacity .5s ease-in-out;
 }
 
 #muters:hover #volume-bar { 
-	/* visibility: visible; */
+	visibility: visible;
 	opacity: 1; 
+}
+
+#muters {
+	display: inline-block
 }
 
 input[type=range] {
