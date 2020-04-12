@@ -89,7 +89,7 @@ button:hover {
 	opacity: 0;
 }
 
-#mute:hover #volume-bar { 
+#muters:hover #volume-bar { 
 	/* visibility: visible; */
 	opacity: 1; 
 }

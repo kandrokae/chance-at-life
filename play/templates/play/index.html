@@ -70,8 +70,10 @@
 					<a href="{% url 'landing' %}"><img src="{% static 'play/images/Chanceatlifelogo.png' %}" alt="Chance At Life Logo" id="logo"></a>
 					<input type="range" id="seek-bar" value="0">
 					<input type="image" id="play-pause" src="{% static 'play/images/play-button.svg' %}">
-					<input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
-					<input type="image" id="mute" src="{% static 'play/images/speaker.svg' %}">
+					<div id="muters">
+						<input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+						<input type="image" id="mute" src="{% static 'play/images/speaker.svg' %}">
+					</div>
 					<button type="button" id="full-screen">Full-Screen</button>
 				</div>
 			</div>
