@@ -39,6 +39,11 @@ body {
 		left: 0;
 		right: 0;
 		padding: 10px;
+		padding-right: 30px;
+	}
+
+	#volume-bar {
+		right: 13px;
 	}
 }
 
@@ -49,6 +54,10 @@ body {
 		left: 0;
 		right: 0;
 		padding-right: 10px;
+	}
+
+	#volume-bar {
+		right: -3px;
 	}
 }
 #video-controls {
@@ -82,7 +91,6 @@ button:hover {
 	position: absolute;
 	padding-left: 10px;
 	bottom: 83px;
-    right: 13px;
 	transform: rotate(-90deg);
 	visibility: hidden;
 	opacity: 0;
@@ -418,7 +426,7 @@ input[type=range]:focus::-ms-fill-upper {
 	height: 30px;  
     width: auto;
     position: relative;
-	padding-right: 20px;
+	padding-right: 5px;
 }
 
 #start {
