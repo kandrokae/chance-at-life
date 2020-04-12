@@ -64,22 +64,19 @@
 
 			<input type="image" id="tempmute" src="{% static 'play/images/clicktounmute.svg' %}" alt="Click to Unmute">
 
-		</div>
-	</div>
-			
-	<!-- Video Controls -->
-	<div id='controls-container'>
+			<div id='controls-container'>
 
-		<div id="video-controls">
-			<a href="{% url 'landing' %}"><img src="{% static 'play/images/Chanceatlifelogo.png' %}" alt="Chance At Life Logo" id="logo"></a>
-			<input type="range" id="seek-bar" value="0">
-			<input type="image" id="play-pause" src="{% static 'play/images/play-button.svg' %}">
-			<input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
-			<input type="image" id="mute" src="{% static 'play/images/speaker.svg' %}">
-			<button type="button" id="full-screen">Full-Screen</button>
+				<div id="video-controls">
+					<a href="{% url 'landing' %}"><img src="{% static 'play/images/Chanceatlifelogo.png' %}" alt="Chance At Life Logo" id="logo"></a>
+					<input type="range" id="seek-bar" value="0">
+					<input type="image" id="play-pause" src="{% static 'play/images/play-button.svg' %}">
+					<input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+					<input type="image" id="mute" src="{% static 'play/images/speaker.svg' %}">
+					<button type="button" id="full-screen">Full-Screen</button>
+				</div>
+			</div>
 		</div>
-	</div>
-	
+	</div>	
 
 	<div id="timerContainer">
 		<div id="timerBar"></div>
