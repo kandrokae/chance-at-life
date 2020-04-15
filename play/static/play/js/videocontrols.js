@@ -117,7 +117,7 @@ window.onload = function() {
 
 	
 	//Setting up JSON data and Ajax
-	var questionurl = 'https://chance-at-life.herokuapp.com/api/question/';
+	var questionurl = 'https://chance-at-life.com/api/question/';
 
 	var questionData;
 	$.ajax({
@@ -215,11 +215,11 @@ window.onload = function() {
 		};
 
 		if (video.currentTime >= video.duration - 1) {
-			window.location.href = 'https://chance-at-life.herokuapp.com/';
+			window.location.href = 'https://chance-at-life.com/';
 		};
 
 		if (video.currentTime >= loseTime - 0.5) {
-			window.location.href = 'https://chance-at-life.herokuapp.com/';
+			window.location.href = 'https://chance-at-life.com/';
 		};
 
 
