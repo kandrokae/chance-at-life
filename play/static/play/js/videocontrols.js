@@ -139,7 +139,7 @@ window.onload = function() {
 
 
 	// Update the seek bar as the video plays
-	video.addEventListener("timeupdate", function(questiondata) {
+	video.addEventListener("timeupdate", function(questionData) {
 		// Calculate the slider value
 		var value = (100 / video.duration) * video.currentTime;
 
