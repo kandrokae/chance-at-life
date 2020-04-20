@@ -129,12 +129,12 @@ window.onload = function() {
 			success: function(data) {
 				tmp = data;
 				console.log(questionData);
-			};
+			},
 			error: function(error_data) { 
 				console.log("error questiondata");
 			},
 		});
-		return tmp;
+		return tmp;	
 	}();
 
 	//Set up the progress bar
