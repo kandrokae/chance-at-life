@@ -128,14 +128,16 @@ window.onload = function() {
 			dataType: 'json',
 			success: function(data) {
 				tmp = data;
-				console.log(questionData);
+				console.log(tmp);
 			},
 			error: function(error_data) { 
-				console.log("error questiondata");
+				console.log("error questionData");
 			},
 		});
 		return tmp;	
 	}();
+
+	console.log(questionData)
 
 	//Set up the progress bar
 	var progressBar = document.getElementById("myBar");
