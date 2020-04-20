@@ -80,7 +80,7 @@ window.onload = function() {
 			video.mozRequestFullScreen(); // Firefox
 		} else if (video.webkitRequestFullscreen) {
 			video.webkitRequestFullscreen(); // Chrome and Safari
-		}
+		};
 	});
 
 	tempMuteButton.addEventListener("click", function() {
@@ -120,12 +120,14 @@ window.onload = function() {
 	var questionurl = 'https://chance-at-life.herokuapp.com/api/question/';
 
 	var questionData;
+
 	$.ajax({
 		method: 'GET',
 		url: questionurl,
 		dataType: 'json',
 		success: function(data) {
 			questionData = data;
+			console.log("success");
 		},
 		error: function(error_data) {
 			console.log("error questiondata");
