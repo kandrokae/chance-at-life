@@ -117,7 +117,7 @@ window.onload = function() {
 
 	
 	//Setting up JSON data and Ajax
-	var questionurl = 'https://chance-at-life.herokuapp.com/api/question/';
+	var questionurl = 'http://chance-at-life.com/api/question/';
 
 	var questionData;
 	$.ajax({
