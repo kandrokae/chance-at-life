@@ -59,13 +59,7 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
 ]
-
-CORS_ORIGIN_WHITELIST = [
-    '127.0.0.1',
-    'https://chance-at-life.herokuapp.com',
-    'http://chance-at-life.com',
-    'http://www.chance-at-life.com',
-]
+CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'ChanceAtLife.urls'
 
