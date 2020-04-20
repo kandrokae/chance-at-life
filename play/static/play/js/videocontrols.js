@@ -129,6 +129,7 @@ window.onload = function() {
 			success: function(data) {
 				tmp = data;
 				console.log(tmp);
+				return tmp;
 			},
 			error: function(error_data) { 
 				console.log("error questionData");
