@@ -1,29 +1,4 @@
 window.onload = function() {
-
-	//Setting up JSON data and Ajax
-	var questionurl = 'https://chance-at-life.herokuapp.com/api/question/';
-
-	var questionData = function () {
-		var tmp = null;
-
-		$.ajax({
-			method: 'GET',
-			url: questionurl,
-			dataType: 'json',
-			success: function(data) {
-				tmp = data;
-				console.log(tmp);
-				return tmp;
-			},
-			error: function(error_data) { 
-				console.log("error questionData");
-			},
-		});
-		return tmp;	
-	}();
-
-	console.log(questionData)
-
 	// Video
 	var video = document.getElementById("video");
 
@@ -140,6 +115,27 @@ window.onload = function() {
 		seekBar.value = value;
 	});
 
+	
+	//Setting up JSON data and Ajax
+	var questionurl = 'https://chance-at-life.herokuapp.com/api/question/';
+
+	var questionData = null;
+
+	$.ajax({
+		method: 'GET',
+		url: questionurl,
+		dataType: 'json',
+		async: false,
+		success: function(data) {
+			questionData = data;
+			console.log(questionData);
+		},
+		error: function(error_data) { 
+			console.log("error questionData");
+		},
+	});
+
+	console.log(questionData)
 
 	//Set up the progress bar
 	var progressBar = document.getElementById("myBar");
