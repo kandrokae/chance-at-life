@@ -25,7 +25,7 @@ urlpatterns = [
     path('', WelcomeView.as_view(), name='landing'),
     path('admin/', admin.site.urls),
     path('play/', include('play.urls')),
-    path('api/question/', QuestionListAPIView.as_view()),
+    path('api/question/', QuestionListAPIView.as_view(), name='apiquestions'),
     path('api/choice/', ChoiceListAPIView.as_view()),
 ]
 

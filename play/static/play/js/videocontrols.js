@@ -128,7 +128,7 @@ window.onload = function() {
 		success: function(data) {
 			questionData = data;
 			// Update the seek bar as the video plays
-			video.addEventListener("timeupdate", function(questionData) {
+			video.addEventListener("timeupdate", function(data) {
 				// Calculate the slider value
 				var value = (100 / video.duration) * video.currentTime;
 
@@ -139,7 +139,6 @@ window.onload = function() {
 					progressBar.style.width = parseInt(oldpercent) - (500/55) + "%";
 					var currentPrice = parseInt(oldPrice) - 5;
 					progressText.innerHTML = "$" + currentPrice;
-					console.log("works");
 				};
 
 				//Start button shows up when it has to
@@ -196,7 +195,7 @@ window.onload = function() {
 					window.location.href = 'http://chance-at-life.com/';
 				};
 
-				if (video.currentTime >= loseTime - 0.5) {
+				if (video.currentTime >= winTime - 0.5) {
 					window.location.href = 'http://chance-at-life.com/';
 				};
 
@@ -290,14 +289,14 @@ window.onload = function() {
 				// Update the slider value
 				seekBar.value = value;
 			});
-			console.log(questionData);
+			//console.log(questionData);
 		},
 		error: function(error_data) { 
 			console.log("error questionData");
 		},
 	});
 
-	console.log(questionData)
+	//console.log(questionData)
 
 	//Set up the progress bar
 	var progressBar = document.getElementById("myBar");
