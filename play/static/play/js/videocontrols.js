@@ -127,7 +127,7 @@ window.onload = function() {
 		dataType: 'json',
 		success: function(data) {
 			questionData = data;
-			console.log("success");
+			console.log(questionData);
 		},
 		error: function(error_data) {
 			console.log("error questiondata");
@@ -152,7 +152,7 @@ window.onload = function() {
 			progressBar.style.width = parseInt(oldpercent) - (500/55) + "%";
 			var currentPrice = parseInt(oldPrice) - 5;
 			progressText.innerHTML = "$" + currentPrice;
-			console.log("works")
+			console.log("works");
 		};
 
 		//Start button shows up when it has to
