@@ -119,20 +119,23 @@ window.onload = function() {
 	//Setting up JSON data and Ajax
 	var questionurl = 'https://chance-at-life.herokuapp.com/api/question/';
 
-	var questionData;
+	var questionData = function () {
+		var tmp = null;
 
-	$.ajax({
-		method: 'GET',
-		url: questionurl,
-		dataType: 'json',
-		success: function(data) {
-			questionData = data;
-			console.log(questionData);
-		},
-		error: function(error_data) {
-			console.log("error questiondata");
-		},
-	});
+		$.ajax({
+			method: 'GET',
+			url: questionurl,
+			dataType: 'json',
+			success: function(data) {
+				tmp = data;
+				console.log(questionData);
+			};
+			error: function(error_data) { 
+				console.log("error questiondata");
+			},
+		});
+		return tmp;
+	}();
 
 	//Set up the progress bar
 	var progressBar = document.getElementById("myBar");
