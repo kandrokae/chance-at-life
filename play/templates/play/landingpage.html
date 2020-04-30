@@ -5,42 +5,44 @@
 	<meta charset="UTF-8">
 	<title>{% block title %}Chance At Life{% endblock %}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 
-		<link rel="icon" href="{% static 'play/images/icon.png' %}">
-		<link href="https://fonts.googleapis.com/css?family=Changa:400,500,600,700&display=swap" rel="stylesheet"> 
-		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,300i,400,400i,600,600i,700,900&display=swap" rel="stylesheet"> 
-		<link rel="stylesheet" type="text/css" href="{% static 'play/css/landingstyle.css' %}"/>
+ 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="icon" href="{% static 'play/images/icon.png' %}">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Changa:400,500,600,700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,300i,400,400i,600,600i,700,900&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="{% static 'play/css/landingstyle.css' %}"/>
 </head>
-<body >
-	<img id="bg" src="{% static 'play/images/bg.png' %}" alt="bg">
-	<nav>
-		<div id="logo">
-			<a href="{% url 'landing' %}"><img src="{% static 'play/images/Chanceatlifelogo.png' %}" alt="Chance At Life Logo" height="70px"></a>
-		</div> 
+<body style="background-image: url('{% static 'play/images/bg.png' %}')"> 
+	<div class="container" style="height: 100vh;">
+		<div class="row h-100">
+			<div class="col-md-8 col-lg-8 h-70vh my-auto pl-lg-5" id="welcome-text">
+				<div id="logo">
+					<a href="{% url 'landing' %}"><img src="{% static 'play/images/Chanceatlifelogo.png' %}" alt="Chance At Life Game" height="120px"></a>
+				</div> 
+				<h1 id="welcome"><b>Chance At Life, the Game</b></h1>
+				<h4 id="madeby">by Jullian Androkae</h4>
+				<p class="w-75" id="bio">It's easy to think that in a place where things are cheaper, insanely low-wages can be adequate. Challenge this assumption with this game, where you live 30 days in the life of a minimum wage worker in my home country of Madagascar. This might not be completely accurate to their day-to-day lives, but I hope for you to gain a better grasp of such a life, which is far from being a game for those who live it off screen.</p>
+				<div class="play-button pt-3">	
+					<a href="{% url 'index' %}">
+						<img src="{% static 'play/images/questionbox.png' %}" alt="questionbox" width="100%">
+						<p class="play-text">Play now</p>
+					</a>
+				</div>
+			</div>
 
-	</nav>
-	<div id="page-container">
+			<div class="col-md-4 col-lg-4 h-70vh my-auto pr-lg-5">
+				<img class="iphone float-right" src="{% static 'play/images/Screenshot.png' %}" alt="screenshot">
+			</div>			
+		</div>	
 
-		<div id="welcome-text">
-			<h1 id="welcome">Welcome to Chance At Life!</h1>
-			<h4 id="madeby">by Jullian Androkae</h4>
-			<p id="bio">It's easy to think that in a place where things are cheaper, insanely low-wages can be adequate. Challenge this assumption with this game, where you live 30 days in the life of a minimum wage worker in my home country of Madagascar. This might not be completely accurate to their day-to-day lives, but I hope for you to gain a better grasp of such a life, which is far from being a game for those who live it off screen.</p>
-		</div>
-
-		<div id="play-button">
-			<a href="{% url 'index' %}">
-				<img id="questionbox" src="{% static 'play/images/questionbox.png' %}" alt="questionbox" width="100%">
-				<p id="play-text">Play now</p>
-			</a>
-		</div>
 	
 	</div>
-
-	<div>
-		<img id="iphone" src="{% static 'play/images/Screenshot.png' %}" alt="screenshot">
-	</div>		
-
+		
+			
 	
+	<script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
 
 </body>
 </html>

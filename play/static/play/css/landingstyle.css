@@ -1,21 +1,11 @@
 html {
 }
 
-#bg {
-	z-index: -1;
-	min-width: 100vw;
-	height: 100%;
-	bottom: 0;
-	position: fixed;
-	left: 50%;
-	transform: translateX(-50%);
-	object-fit: cover;
-
-}
 
 body { 
 	margin:0; 
 	background-color: #e5f588;
+	font-family: 'Noto Sans KR', sans-serif;
 
 } 
 
@@ -28,19 +18,24 @@ body {
 
 }
 
-#play-button {
-	padding-top: 40px;
-	right: 0;
-	width: 245px;
-	position: absolute;
+@media (min-width: 768px) {
+	.h-70vh {
+		max-height: 70vh;
+	}
 }
 
-#play-text {
+.play-button {
+	right: 0;
+	width: 245px;
+	position: relative;
+}
+
+.play-text {
 	position: absolute;
+	top: 50%;
 	left: 50%;
-	bottom: 0%;
-	-webkit-transform: translateX(-50%) translateY(35%);
-	transform: translateX(-50%) translateY(35%);
+	-webkit-transform: translateX(-50%) translateY(-58%);
+	transform: translateX(-50%) translateY(-58%);
 	font-family: 'Changa', sans-serif;
 	font-weight: 600;
 	font-size: 30px;
@@ -54,19 +49,15 @@ nav {
 }
 
 #logo {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	padding-left: 40px;
+	padding-bottom: 10px;
 }
 
 #welcome-text {
 	padding-top: 0px;
-	font-family: 'Titillium Web', sans-serif;
+	/*font-family: 'Titillium Web', sans-serif;*/
 }
 
 #madeby {
-	margin: 0;
 	font-weight: 600;
 	font-size: 20px;
 	font-style: italic;
@@ -74,19 +65,17 @@ nav {
 }
 
 #welcome {
-	font-size: 50px;
+	
 	color: white;
-	margin: 0;
 }
 
 #bio {
-	font-size: 18px;
+	font-size: 15px;
+	color: white;
+	font-weight: 300;
 }
 
-#iphone {
-	position: absolute;
-	top: 50%;
-	right: 15%;
-	transform: translateY(-50%);
-	height: 500px;
+.iphone {
+	max-height: 70vh;
+	max-width: 100%;
 }
