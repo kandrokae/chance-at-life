@@ -18,8 +18,8 @@ html, body {
 
 svg {
 	overflow: visible;
-	width: 140px;
-	height: 120px;
+	width: 100px;
+	height: 150px;
 }
 svg g {
 	animation: slide 2s linear infinite;
