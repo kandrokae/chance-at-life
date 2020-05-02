@@ -9,6 +9,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	z-index: 5000;
 }
 html, body {
 	width: 100%;
@@ -344,6 +345,8 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 #choiceleft {
+	display: block;
+	text-decoration: none;
 	position: absolute;
 	left: 15%;
 	bottom: 17%;
@@ -351,11 +354,22 @@ input[type=range]:focus::-ms-fill-upper {
 
 }
 
+#choiceleft:hover {
+	cursor: pointer;
+}
+
 #choiceright {
+	display: block;
+	text-decoration: none;
 	position:absolute;
 	right: 15%;
 	bottom: 17%;
 	width: 27%;
+
+}
+
+#choiceright:hover {
+	cursor: pointer;
 }
 
 #questiondiv {
@@ -384,16 +398,6 @@ input[type=range]:focus::-ms-fill-upper {
 	-webkit-transform: translateX(-100%);
 }
 	
-#button2 {
-	max-width: 100%;
-	max-height: 100%;
-	opacity: 10%;
-	z-index: 5;
-	position: absolute;
-	transform: translateX(-100%);
-	-webkit-transform: translateX(-100%);
-}
-
 #rightchoice {
 	max-width: 100%;
 	max-height: 100%; 

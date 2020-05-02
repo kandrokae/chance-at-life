@@ -48,18 +48,16 @@
 					<p id="questions"></p>
 				</div>
 
-				<div id="choiceleft">
-					<input type="image" id="leftchoice" src="{% static 'play/images/leftchoice.png' %}">
+				<a id="choiceleft">
+					<img id="leftchoice" src="{% static 'play/images/leftchoice.png' %}">
 					<p id="choice1">Choice 1</p>
 					<p id="price1">$10</p>
-					<input type="image" id="button1" src="{% static 'play/images/leftchoice.png' %}">
-				</div>
-				<div id="choiceright">
-					<input type="image" id="rightchoice" src="{% static 'play/images/rightchoice.png' %}">
+				</a>
+				<a id="choiceright">
+					<img id="rightchoice" src="{% static 'play/images/rightchoice.png' %}">
 					<p id="choice2">Choice 2</p>
 					<p id="price2">$5</p>
-					<input type="image" id="button2" src="{% static 'play/images/rightchoice.png' %}">
-				</div>
+				</a>
 			</div>
 
 			<input type="image" id="tempmute" src="{% static 'play/images/clicktounmute.svg' %}" alt="Click to Unmute">
@@ -107,9 +105,9 @@
 	</div>
 
 	<script>
-		$(window).on("load", function(){
+		$(window).on("load", setTimeout(function(){
 			$(".loader-wrapper").fadeOut("slow");
-		});
+		}, 2000));
 	</script>
 
 </body>
