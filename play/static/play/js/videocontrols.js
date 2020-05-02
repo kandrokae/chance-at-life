@@ -203,6 +203,12 @@ window.onload = function() {
 				for (i=0; i < questionData.length; i++) {
 
 					if (video.currentTime >= questionData[i].timestamp + 2 && video.currentTime <= questionData[i].choice1_timestamp - 0.2) {
+						var mq = window.matchMedia( "(max-aspect-ratio: 774/792)" );
+						var logo = document.getElementById("logo");
+						if (mq.matches) {
+						    logo.style.opacity = "0";
+						};
+
 						prompt.style.visibility = "visible";
 						prompt.style.opacity = "1";
 						timerContainer.style.visibility = "visible";
@@ -276,6 +282,12 @@ window.onload = function() {
 						timerContainer.style.visibility = "hidden";
 						timerBar.style.transition = "all " + 0.1 + "s ease-in-out";
 						timerBar.style.width = "0%";
+
+						var mq = window.matchMedia( "(max-aspect-ratio: 774/792)" );
+						var logo = document.getElementById("logo");
+						if (mq.matches) {
+						    logo.style.opacity = "1";
+						};
 
 
 						if (video.currentTime >= questionData[i].choice2_timestamp - 0.5 && video.currentTime <= questionData[i].choice2_timestamp - 0.1 ) {

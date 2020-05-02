@@ -292,6 +292,11 @@ input[type=range]:focus::-ms-fill-upper {
 	background: #367ebd;
 }
 
+#logo {
+	-webkit-transition: all 0.15s ease-in-out;
+	transition: all 0.15	s ease-in-out;
+}
+
 @media (min-aspect-ratio: 774/792) {
 	#logo {
 		height: 70px;
@@ -585,28 +590,28 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 #timerContainer {
-	position: fixed;
+	position: absolute;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 	height: 4px;
-	width: 419px;
-	border-radius: 2px;
+	width: 89.5%;
+	border-radius: 3px;
 	visibility: hidden;
 	opacity: 0;
 	top: 1%;
-	background-color: #FFA64E;
+	background-color: #3BA1E3;
 	z-index: 7;
 	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-	-webkit-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
+	-webkit-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
 } 
 
 #timerBar {
 	width: 0%;
 	height: 100%;
 	opacity: 1;
-	background-color: #3BA1E3;
+	background-color: #ffffff;
 	border-radius: 2px;
 	-webkit-transition: all 5s ease-in-out;
 	transition: all 5s ease-in-out;
