@@ -24,7 +24,7 @@
 		<div id="videoholder">
 			<video id="video" playsinline="" autoplay="" muted="">
 			<source src="{% static 'play/videos/ChanceAtLifelite_qtp.mp4' %}" type='video/mp4'>
-			Your browser does not support the video tag.
+			<track label="English" kind="subtitles" srclang="en" src="{% static 'play/srt/chanceatlife.vtt' %}" default>
 			</video>
 				
 			<input type="image" id="start" src="{% static 'play/images/playbutton.png' %}">
