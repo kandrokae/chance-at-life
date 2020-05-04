@@ -1,5 +1,6 @@
 /* LOADER */
 .loader-wrapper {
+	will-change: transform;
 	-webkit-transform: translateZ(0);
 	-webkit-backface-visibility: hidden;
 	height: 100%;
@@ -20,6 +21,8 @@ html, body {
 
 
 svg {
+	-webkit-transform: translateZ(0);
+	will-change: transform;
 	overflow: visible;
 	width: 100px;
 	height: 150px;
@@ -48,9 +51,17 @@ svg path {
 @keyframes slide {
 	0% {
 		transform: translateY(-50px);
+		-webkit-transform: translateY(-50px);
+		-moz-transform: translateY(-50px);
+		-ms-transform: translateY(-50px);
+		-o-transform: translateY(-50px);
 	}
 	100% {
 		transform: translateY(50px);
+		-webkit-transform: translateY(50px);
+		-moz-transform: translateY(50px);
+		-ms-transform: translateY(50px);
+		-o-transform: translateY(50px);
 	}
 }
 @keyframes escalade {

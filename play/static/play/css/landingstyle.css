@@ -6,7 +6,7 @@ body {
 	margin:0; 
 	background-color: #e5f588;
 	font-family: 'Noto Sans KR', sans-serif;
-	background: no-repeat center center scroll;
+	background: no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
