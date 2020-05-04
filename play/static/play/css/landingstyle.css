@@ -11,6 +11,7 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	background-attachment:fixed;
 } 
 
 #page-container {
@@ -63,17 +64,16 @@ nav {
 
 #madeby {
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 18px;
 	font-style: italic;
 	color: #e5f588;
 }
 
 #welcome {
-	
 	color: white;
 }
 
-#bio {
+.bio {
 	font-size: 15px;
 	color: white;
 	font-weight: 300;
@@ -82,4 +82,21 @@ nav {
 .iphone {
 	max-height: 70vh;
 	max-width: 100%;
+	visibility: visible;
+}
+
+@media (max-width: 768px) {
+	.iphone {
+		visibility: hidden;
+	}
+}
+
+#more {display: none;}
+
+#moreBtn {
+	font-weight: 400;
+	font-style: italic;
+	color: #e5f588;
+	font-size: 14px;
+	cursor: pointer;
 }

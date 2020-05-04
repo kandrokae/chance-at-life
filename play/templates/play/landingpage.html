@@ -16,13 +16,13 @@
 	<div class="container" style="height: 100vh;">
 		<div class="row h-100">
 			<div class="col-md-8 col-lg-8 h-70vh my-auto pl-lg-5" id="welcome-text">
-				<div id="logo">
-					<a href="{% url 'landing' %}"><img src="{% static 'play/images/Chanceatlifelogo.png' %}" alt="Chance At Life Game" height="120px"></a>
+				<div class="my-4 my-md-1">
+					<a class=" d-flex" href="{% url 'landing' %}"><img class="mx-auto mx-sm-0" src="{% static 'play/images/Chanceatlifelogo.png' %}" alt="Chance At Life Game" height="130px"></a>
 				</div> 
-				<h1 id="welcome"><b>Chance At Life, the Game</b></h1>
+				<h1 id="welcome"><b>Chance At Life - the Game</b></h1>
 				<h4 id="madeby">by Jullian Androkae</h4>
-				<p class="w-75" id="bio">It's easy to think that in a place where things are cheaper, insanely low-wages can be adequate. Challenge this assumption with this game, where you live 30 days in the life of a minimum wage worker in my home country of Madagascar. This might not be completely accurate to their day-to-day lives, but I hope for you to gain a better grasp of such a life, which is far from being a game for those who live it off screen.</p>
-				<div class="play-button mt-4">	
+				<p class="w-75 bio">It's easy to think that in a place where things are cheaper, insanely low-wages can be adequate. Challenge this assumption with this game, where you live 30 days in the life of a minimum wage worker in my home country of Madagascar.<span id="dots">..</span><span id="more"> This might not be completely accurate to their day-to-day lives, but I hope for you to gain a better grasp of such a life, which is far from being a game for those who live it off screen.</span><a onclick="readMoreFunc()" id="moreBtn">&nbsp;Read more</a></p>
+				<div class="play-button mt-5 mx-auto mx-md-0">	
 					<a href="{% url 'index' %}">
 						<img src="{% static 'play/images/questionbox.png' %}" alt="questionbox" width="100%">
 						<p class="play-text">Play now</p>
@@ -39,7 +39,23 @@
 	</div>
 		
 			
-	
+	<script>
+		function readMoreFunc() {
+			var dots = document.getElementById("dots");
+			var moreText = document.getElementById("more");
+			var btnText = document.getElementById("moreBtn");
+
+			if (dots.style.display === "none") {
+					dots.style.display = "inline";
+					btnText.innerHTML = "&nbsp; Read more";
+					moreText.style.display = "none";
+			} else {
+					dots.style.display = "none";
+					btnText.innerHTML = "&nbsp; Read less";
+					moreText.style.display = "inline";
+			}
+		}
+	</script>
 	<script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>

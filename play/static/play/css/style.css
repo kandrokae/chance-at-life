@@ -307,7 +307,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 #logo {
 	-webkit-transition: all 0.15s ease-in-out;
-	transition: all 0.15	s ease-in-out;
+	transition: all 0.15s ease-in-out;
 }
 
 @media (min-aspect-ratio: 774/792) {
