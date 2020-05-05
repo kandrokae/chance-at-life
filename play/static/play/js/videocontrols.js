@@ -1,7 +1,7 @@
 window.onload = function() {
 	// Video
 	var video = document.getElementById("video");
-	video.textTracks[0].mode = "visible";
+	video.textTracks[0].mode = "showing";
 
 	// Buttons
 	var playButton = document.getElementById("play-pause");
