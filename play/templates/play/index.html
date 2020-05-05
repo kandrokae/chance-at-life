@@ -22,9 +22,9 @@
 
 	<div id="video-container">
 		<div id="videoholder">
-			<video id="video" playsinline="" autoplay="" muted="">
+			<video controls="" id="video" playsinline="" autoplay="" muted="">
 			<source src="{% static 'play/videos/ChanceAtLifelite_qtp.mp4' %}" type='video/mp4'>
-			<track label="English" kind="subtitles" srclang="en" src="{% static 'play/srt/chanceatlife.vtt' %}" default>
+			<track label="English" kind="captions" srclang="en" src="{% static 'play/srt/chanceatlife.vtt' %}" default>
 			</video>
 				
 			<input type="image" id="start" src="{% static 'play/images/playbutton.png' %}">

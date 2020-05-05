@@ -115,6 +115,11 @@ body {
 	z-index: 1;
 }
 
+video::cue {
+	background-color: #081630;
+	
+}
+
 @media (min-aspect-ratio: 774/792) {
 	#video-controls {
 		position: fixed;
