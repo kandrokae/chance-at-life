@@ -19,6 +19,7 @@ window.onload = function() {
 	var myProgress = document.getElementById("myProgress");
 	var progressBar = document.getElementById("myBar");
 	var progressText = document.getElementById("progressText");
+	var selectmp3 = document.getElementById("selectmp3")
 
 	var startButton = document.getElementById("start");
 
@@ -234,6 +235,7 @@ window.onload = function() {
 						//Event listener for the button1 button
 						button1.addEventListener("click", function(){
 							if (oldpercent > parseInt(choice1price)*100/55) {
+								selectmp3.play()
 								var currentPrice;
 								video.currentTime = choice1time;
 								progressBar.style.width = parseInt(oldpercent) - (parseInt(choice1price)*100/55) + "%";
@@ -256,6 +258,7 @@ window.onload = function() {
 								progressBar.style.width = parseInt(oldpercent) - (parseInt(choice2price)*100/55) + "%";
 								currentPrice = parseInt(oldPrice) - parseInt(choice2price);
 								progressText.innerHTML = "$" + currentPrice;
+								selectmp3.play()
 							} else {
 								progressBar.style.width = '0%';
 								progressText.innerHTML = "$0";
