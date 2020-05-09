@@ -133,6 +133,11 @@ video::cue {
 	#volume-bar {
 		right: 13px;
 	}
+
+	#skipintro {
+		max-height: 79%;
+		height: auto;
+	}
 }
 
 @media (max-aspect-ratio: 774/792) {
@@ -146,6 +151,11 @@ video::cue {
 
 	#volume-bar {
 		right: -3px;
+	}
+
+	#skipintro {
+		max-height: 100%;
+		height: auto;
 	}
 }
 #video-controls {
@@ -315,22 +325,34 @@ input[type=range]:focus::-ms-fill-upper {
 	transition: all 0.15s ease-in-out;
 }
 
-@media (min-aspect-ratio: 774/792) {
+@media (min-aspect-ratio: 4/3) {
 	#logo {
 		height: 70px;
 			left: 2vh;
 			bottom: 1.5vh;
 			position: fixed;
 	}
+
+	#skipintro {
+		position: absolute;
+		left: 170px;
+		bottom: 7px;
+	}
 }
 
-@media (max-aspect-ratio: 774/792) {
+@media (max-aspect-ratio: 4/3) {
 	#logo {
 		height: 50px;
 			left: 4vw;
 			top: 4vw;
 			bottom: 0;
 			position: fixed;
+	}
+
+	#skipintro {
+		position: absolute;
+		left: 3.5%;
+		bottom: 15%;
 	}
 }
 

@@ -19,7 +19,9 @@ window.onload = function() {
 	var myProgress = document.getElementById("myProgress");
 	var progressBar = document.getElementById("myBar");
 	var progressText = document.getElementById("progressText");
-	var selectmp3 = document.getElementById("selectmp3")
+	var selectmp3 = document.getElementById("selectmp3");
+	var skipintro = document.getElementById("skipintro");
+	var videoControls = document.getElementById("video-controls")
 
 	var startButton = document.getElementById("start");
 
@@ -133,6 +135,18 @@ window.onload = function() {
 			video.addEventListener("timeupdate", function(data) {
 				// Calculate the slider value
 				var value = (100 / video.duration) * video.currentTime;
+
+				skipintro.addEventListener("click", function() {
+					video.currentTime = 87;
+				});
+
+				if (video.currentTime >= 48 && video.currentTime <= 58) {
+					skipintro.style.visibility = "visible";
+					videoControls.style.opacity = 1;
+				} else {
+					skipintro.style.visibility = "hidden";
+					videoControls.style.opacity = "";
+				};
 
 				// Taxes handling at 06:15
 				if (video.currentTime >= 374 && video.currentTime <= 374.3) {
