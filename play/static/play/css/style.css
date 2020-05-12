@@ -117,7 +117,6 @@ body {
 
 video::cue {
 	background-color: #081630;
-	
 }
 
 @media (min-aspect-ratio: 774/792) {
@@ -187,7 +186,7 @@ button:hover {
 #volume-bar {
 	width: 60px;
 	position: absolute;
-	padding-left: 10px;
+	padding-left: 5px;
 	bottom: 83px;
 	transform: rotate(-90deg);
 	visibility: hidden;
@@ -202,6 +201,10 @@ button:hover {
 #muters:hover #volume-bar { 
 	visibility: visible;
 	opacity: 1; 
+}
+
+#muters:hover {
+	padding-top: 90px;
 }
 
 #muters {

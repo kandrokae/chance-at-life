@@ -61,12 +61,18 @@ window.onload = function() {
 		if (video.muted == false) {
 			// Mute the video
 			video.muted = true;
+			Array.prototype.slice.call(document.querySelectorAll('audio')).forEach(function(audio) {
+				audio.muted = true;
+			});
 
 			// Update the button text
 			muteButton.innerHTML = "Unmute";
 		} else {
 			// Unmute the video
 			video.muted = false;
+			Array.prototype.slice.call(document.querySelectorAll('audio')).forEach(function(audio) {
+				audio.muted = false;
+			});
 
 			// Update the button text
 			muteButton.innerHTML = "Mute";
@@ -91,12 +97,18 @@ window.onload = function() {
 		if (video.muted == false) {
 			// Mute the video
 			video.muted = true;
+			Array.prototype.slice.call(document.querySelectorAll('audio')).forEach(function(audio) {
+				audio.muted = true;
+			});
 			tempMuteButton.style.visibility = "visible";
 
 			// Update the button text
 		} else {
 			// Unmute the video
 			video.muted = false;
+			Array.prototype.slice.call(document.querySelectorAll('audio')).forEach(function(audio) {
+				audio.muted = false;
+			});
 			tempMuteButton.style.visibility = "hidden";
 
 			// Update the button text
@@ -215,6 +227,12 @@ window.onload = function() {
 					window.location.href = 'http://chance-at-life.com/';
 				};
 
+				var caption = video.textTracks[0].activeCues[0];
+				if (caption === undefined) {} else {
+					caption.position = 50;
+					caption.line = -6;
+				};
+
 
 				for (i=0; i < questionData.length; i++) {
 
@@ -292,6 +310,11 @@ window.onload = function() {
 
 						};
 
+						if (caption === undefined) {} else {
+							caption.position = 50;
+							caption.line = -11;
+						};
+
 						
 					} else if (video.currentTime >= questionData[i].choice1_timestamp && video.currentTime < questionData[i].skip_to) {
 						prompt.style.opacity = "0";
@@ -311,6 +334,11 @@ window.onload = function() {
 						if (video.currentTime >= questionData[i].choice2_timestamp - 0.5 && video.currentTime <= questionData[i].choice2_timestamp - 0.1 ) {
 							video.currentTime = questionData[i].skip_to;
 
+						};
+
+						if (caption === undefined) {} else {
+							caption.position = 50;
+							caption.line = -6;
 						};
 
 					};
@@ -348,6 +376,9 @@ window.onload = function() {
 	volumeBar.addEventListener("change", function() {
 		// Update the video volume
 		video.volume = volumeBar.value;
+		Array.prototype.slice.call(document.querySelectorAll('audio')).forEach(function(audio) {
+			audio.volume = volumeBar.value;
+		});
 	});
 
 	startButton.addEventListener("click", function() {
