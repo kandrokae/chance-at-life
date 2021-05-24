@@ -1,25 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 <head>
 	<meta charset="UTF-8">
 	<title>{% block title %}Chance At Life{% endblock %}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	{% load static %} 
 		<link rel="icon" href="{% static 'play/images/icon.png' %}">
 		<link href="https://fonts.googleapis.com/css?family=Changa:400,500,600,700&display=swap" rel="stylesheet"> 
 		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" type="text/css" href="{% static 'play/css/style.css' %}"/>
-		<script
-			src="https://code.jquery.com/jquery-3.4.1.min.js"
-			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-			crossorigin="anonymous">
-		</script>
-		<script src="{% static 'play/js/videocontrols.js' %}"></script>
 </head>
 
 <body>
-	{% load static %}
-
 	<div id="video-container">
 		<div id="videoholder">
 			<video id="video" playsinline="" autoplay="" muted="">
@@ -106,11 +98,14 @@
 		</svg>
 	</div>
 
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script>
 		$(document.getElementById("video")).on("canplay", setTimeout(function(){
 			$(".loader-wrapper").fadeOut("slow");
 		}, 2000));
 	</script>
-
+	<script src="{% static 'play/js/videocontrols.js' %}"></script>
+	<script src="{% static 'play/js/questions.js' %}"></script>
 </body>
+
 </html>

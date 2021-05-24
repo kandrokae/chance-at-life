@@ -117,6 +117,7 @@ body {
 
 video::cue {
 	background-color: #081630;
+	font-size: 2.1vh;
 }
 
 @media (min-aspect-ratio: 774/792) {
@@ -346,10 +347,10 @@ input[type=range]:focus::-ms-fill-upper {
 @media (max-aspect-ratio: 4/3) {
 	#logo {
 		height: 50px;
-			left: 4vw;
-			top: 4vw;
-			bottom: 0;
-			position: fixed;
+		left: 4vw;
+		top: 4vw;
+		bottom: 0;
+		position: fixed;
 	}
 
 	#skipintro {
@@ -358,7 +359,6 @@ input[type=range]:focus::-ms-fill-upper {
 		bottom: 15%;
 	}
 }
-
 
 #prompt {
 	visibility: hidden;
@@ -557,7 +557,12 @@ input[type=range]:focus::-ms-fill-upper {
 	top: 60.7%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
+	transition: all 0.2s ease-in-out;
 
+}
+
+#start:hover { 
+	transform: scale(1.1) translateX(-46%); 
 }
 
 #flag {
